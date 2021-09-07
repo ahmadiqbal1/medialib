@@ -1,0 +1,61 @@
+{
+    "name": "spatie/laravel-medialibrary-pro",
+    "description": "Handle media in a Laravel app",
+    "keywords": [
+        "spatie",
+        "laravel-medialibrary-pro"
+    ],
+    "homepage": "https://github.com/spatie/laravel-medialibrary-pro",
+    "authors": [
+        {
+            "name": "Freek Van der Herten",
+            "email": "freek@spatie.be",
+            "homepage": "https://spatie.be",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "ext-json": "*",
+        "illuminate/validation": "^7.25|^8.0",
+        "spatie/laravel-medialibrary": "^9.3.0",
+        "symfony/mime": "^5.1"
+    },
+    "require-dev": {
+        "illuminate/support": "^7.25|^8.0",
+        "livewire/livewire": "^2.3.3",
+        "mockery/mockery": "^1.4",
+        "orchestra/testbench": "^5.0|^6.0",
+        "phpunit/phpunit": "^9.3",
+        "spatie/laravel-log-dumper": "^1.2",
+        "symfony/var-dumper": "^5.0"
+    },
+    "suggest": {
+        "livewire/livewire": "Allow uploads without using a front end framework"
+    },
+    "autoload": {
+        "psr-4": {
+            "Spatie\\MediaLibraryPro\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Spatie\\MediaLibraryPro\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes",
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Spatie\\MediaLibraryPro\\MediaLibraryProServiceProvider"
+            ]
+        }
+    }
+}
